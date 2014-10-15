@@ -1,5 +1,4 @@
 // http://cdqz.openjudge.cn/2016/0142/
-
 #include <cstdio>
 #include <iostream>
 #include <algorithm>
@@ -68,7 +67,7 @@ int main(void) {
     cin >> n;
     for(int i = 0; i < n; ++i)
         cin >> a[i];
-
+    // use the least possible bits for a state
     int max_pi = lower_bound(prime, prime + MAX_NPRIME, Max_bi(*max_element(a, a + n))) \
                  - prime;
     int max_state = (1 << max_pi);
@@ -82,7 +81,7 @@ int main(void) {
 
         for(bset s = 0; s < max_state; ++s)
         if(f[c][s] < MAX_COST) {
-            for(int k = 1; k <= Max_bi(a[i]); ++k)
+            for(int k = 1; k <= Max_bi(a[i]); ++k) // simply try each b[i]
             if(!(s & p[k]))
                 Mrelax(_new < _old, f[c ^ 1][s | p[k]], f[c][s] + abs(a[i] - k));
         }
