@@ -6,11 +6,11 @@
 #include <cstdlib>
 using namespace std;
 
-#define PROG "seq"
+#define PROB "seq"
 void redirect(void) {
 #ifndef ONLINE_JUDGE
-    freopen(PROG ".in", "r", stdin);
-    freopen(PROG ".out", "w", stdout);
+    freopen(PROB ".in", "r", stdin);
+    freopen(PROB ".out", "w", stdout);
 #endif
     ios::sync_with_stdio(false);
 }
