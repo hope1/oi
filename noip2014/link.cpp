@@ -24,7 +24,7 @@ bool cmpgt_w(int lhs, int rhs) {
 
 int mod(int a, int m) {
     if(a < 0)
-        a += ((-a / m) + 2) * m;
+        a += ((-a / m) + 1) * m;
     return a % m;
 }
 
