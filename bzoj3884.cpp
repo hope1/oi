@@ -38,7 +38,6 @@ namespace Student {
     const int BigNewsLimit = 10000001; // 10^7
     const int PiLimit = 1000001; // > pi(10^7)
 
-
     int bignews[BigNewsLimit], phi[BigNewsLimit];
     short a1[BigNewsLimit];
     bool composite[BigNewsLimit];
