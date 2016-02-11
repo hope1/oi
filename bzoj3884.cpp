@@ -83,7 +83,7 @@ namespace Student {
     }
 }
 
-// O(Tsqrt(p)log^2(p))
+// O(Tsqrt(p)log(p))
 namespace Elder {
     int phi(int n) {
         int r = 1;
